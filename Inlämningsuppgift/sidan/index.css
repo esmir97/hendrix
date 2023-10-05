@@ -1,8 +1,38 @@
+@font-face {
+    font-family: HeaderFont;
+    src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: navfont1;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: navfont2;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: navfont3;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: paragraphfont1;
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: headerFont2;
+    src: url(fonts/Bungee_Outline/BungeeOutline-Regular.ttf);
+}
+
 body {
     margin: 0;
     background-image: url(images/background1.jpg);
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
 
     display: flex;
     justify-content: center;
@@ -15,23 +45,25 @@ body {
 
     background-color: rgba(0, 0, 0, 0.2);
 
-    margin-top: 130px;
-    border-radius: 30px;
+    margin-top: 45px;
+    border-radius: 20px;
 }
 
 h1 {
     font-family: HeaderFont;
     color: lightgrey;
     font-size: 80px;
-    margin: 20px;
-    margin-bottom: 60px;
-    margin-right: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 nav {
     display: flex;
     gap: 5px;
     margin: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 nav a {
@@ -51,19 +83,120 @@ nav a {
 
 nav > a:nth-of-type(2) {
     font-family: navfont2;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+    border: 1px solid white;
+    pointer-events: none;
 }
 
-@font-face {
-    font-family: HeaderFont;
-    src: url(fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
 }
 
-@font-face {
-    font-family: navfont1;
-    src: url(fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+ul {
+    list-style: none;
+
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-@font-face {
-    font-family: navfont2;
-    src: url(fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+h2 {
+    font-family: HeaderFont2;
+    color: lightgray;
+    margin: 0;
+    font-size: 30px;
+}
+
+h3 {
+    margin: 0;
+    font-family: navfont3;
+    color: lightgray;
+    font-size: 27px;
+}
+
+p, ul {
+    font-family: paragraphfont1;
+    color: lightgray;
+}
+
+ol {
+    background-color: rgb(255, 217, 40);
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+
+    display: flex;
+}
+
+.box > div > img:nth-of-type(1) {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.box > div > p:nth-of-type(1) {
+    padding-top: 40px;
+    margin-bottom: 0;
+}
+
+.box > div:nth-child(1) {
+    width: 60%;
+}
+
+.box > div:nth-child(2) {
+    width: 40%;
+}
+
+.box > div:nth-child(2) > div {
+    display: flex;
+    gap: 10px;
+}
+
+.box > div:nth-child(2) > div > div {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(1) > ol {
+    border-radius: 0 0 0 20px;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(2) > ol {
+    border-radius: 0 0 20px 0;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(1) > ol > p {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+
+
+    color: rgb(171, 94, 142);
+}
+
+.box > div:nth-child(2) > div > div:nth-child(2) > ol > p {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+
+
+    color: rgb(171, 94, 142);
+}
+
+.box > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1){
+    font-family: navfont3;
+    font-size: 20px;
+}
+
+.box > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
+    font-family: navfont3;
+    font-size: 20px;
 }
