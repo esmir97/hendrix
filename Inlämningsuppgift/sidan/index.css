@@ -41,12 +41,12 @@ body {
 
 #wrapper {
     height: 100%;
-    width: 80vw;
+    width: 85%;
 
     background-color: rgba(0, 0, 0, 0.2);
 
     margin-top: 4vw;
-    border-radius: 20px;
+    border-radius: 2vw;
 }
 
 h1 {
@@ -54,22 +54,22 @@ h1 {
     color: lightgrey;
     font-size: 6vw;
     margin: 0;
-    margin-top: 2vw;
-    margin-left: 2vw;
+    margin-top: 2%;
+    margin-left: 2%;
 }
 
 nav {
     display: flex;
-    gap: 0.5vw;
-    margin: 2vw;
-    margin-top: 6vw;
-    margin-bottom: 6vw;
+    gap: 0.5%;
+    margin: 2%;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 nav a {
     background-color: rgba(211, 211, 211, 0.7);
-    border-radius: 10px;
-    padding: 1vw;
+    border-radius: 1vw;
+    padding: 1.2%;
 
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
@@ -83,7 +83,7 @@ nav a {
 
 nav > a:nth-of-type(2) {
     font-family: navfont2;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255);
+    box-shadow: 0px 0px 1vw rgba(255, 255, 255);
     border: 1px solid white;
     pointer-events: none;
 }
@@ -97,41 +97,50 @@ ul {
     list-style: none;
 
     margin-top: 0;
-    margin-bottom: 4vw;
+    margin-bottom: 7%;
+}
+
+li {
+    font-size: 1.2vw;
+    color: lightgray;
+    font-family: paragraphfont1;
 }
 
 h2 {
     font-family: HeaderFont2;
     color: lightgray;
     margin: 0;
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 h3 {
     margin: 0;
     font-family: navfont3;
     color: lightgray;
-    font-size: 1.7vw;
+    font-size: 2vw;
 }
 
-p, ul {
+p {
     font-family: paragraphfont1;
     color: lightgray;
 }
 
-ol {
+.list1 {
     background-color: rgb(255, 217, 40);
     width: 100%;
-    margin-top: 0.5vw;
-    padding: 1vw;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 5%;
+
+    flex-direction: column;
 }
 
 .box {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid white;
-    border-radius: 20px;
-    margin: 2vw;
-    padding: 1vw;
+    border-radius: 2vw;
+    margin: 2%;
+    padding: 1.5%;
 }
 
 main {
@@ -140,7 +149,7 @@ main {
 
 main > div > div:nth-child(1) > img:nth-of-type(1) {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 2vw 2vw 0 0;
     position: relative;
     z-index: 1;
     transition: opacity 1s;
@@ -149,7 +158,7 @@ main > div > div:nth-child(1) > img:nth-of-type(1) {
 main > div > div:nth-child(1) > img:nth-of-type(2) {
     width: 100%;
     height: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 2vw 2vw 0 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -161,8 +170,19 @@ main > div > div:nth-child(1) >img:nth-of-type(1):hover {
 }
 
 main > div > p:nth-of-type(1) {
-    padding-top: 3vw;
+    padding-top: 9%;
     margin-bottom: 0;
+    font-size: 1.7vw;
+}
+
+main > div > p:nth-of-type(2) {
+    letter-spacing: 0;
+    padding-right: 3%;
+    font-size: 1.3vw;
+}
+
+main > div > ul > li {
+    font-size: 1.5vw;
 }
 
 main > div:nth-child(1) {
@@ -176,7 +196,7 @@ main > div:nth-child(2) {
 
 main > div:nth-child(2) > div {
     display: flex;
-    gap: 0.5vw;
+    gap: 2%;
 }
 
 main > div:nth-child(2) > div > div {
@@ -185,38 +205,23 @@ main > div:nth-child(2) > div > div {
     flex-grow: 1;
 }
 
-main > div:nth-child(2) > div > div:nth-child(1) > ol {
-    border-radius: 0 0 0 20px;
+main > div:nth-child(2) > div > div:nth-child(1) {
+    border-radius: 0 0 0 2vw;
 }
 
-main > div:nth-child(2) > div > div:nth-child(2) > ol {
-    border-radius: 0 0 20px 0;
+main > div:nth-child(2) > div > div:nth-child(2) {
+    border-radius: 0 0 2vw 0;
 }
 
-main > div:nth-child(2) > div > div:nth-child(1) > ol > p {
+.list1 > p {
     padding: 0;
     margin: 0;
     font-size: 1vw;
 
-
     color: rgb(171, 94, 142);
 }
 
-main > div:nth-child(2) > div > div:nth-child(2) > ol > p {
-    padding: 0;
-    margin: 0;
-    font-size: 1vw;
-
-
-    color: rgb(171, 94, 142);
-}
-
-main > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1){
-    font-family: navfont3;
-    font-size: 1.5vw;
-}
-
-main > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
+.list1 p:nth-child(1){
     font-family: navfont3;
     font-size: 1.5vw;
 }
@@ -224,7 +229,7 @@ main > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
 .box > div {
     display: grid;
     grid-template-columns:1fr 1fr 2fr 1fr 1fr;
-    gap: 0.3vw;
+    gap: 0.3%;
 }
 
 main > div:nth-child(2) > div:nth-child(1) {
@@ -235,12 +240,13 @@ main > div:nth-child(2) > div:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1vw;
+    padding: 5%;
 }
 
 .box > div > div:nth-child(1) {
     background-color: rgb(171, 94, 142);
-    border-radius: 20px 0 20px 20px;
+    border-radius: 2vw 0 2vw 2vw;
+    padding: 15%;
 }
 
 .box > div > div > p {
@@ -251,76 +257,47 @@ main > div:nth-child(2) > div:nth-child(1) {
 .box > div > div:nth-child(2) {
     background-color: rgb(171, 94, 142);
     grid-column: 3 / 4;
-    border-radius: 20px 20px 20px 0;
+    border-radius: 2vw 2vw 2vw 0;
 }
 
 .box > div > div:nth-child(3) {
-    height: 12vw;
-    width: 11vw;
-    
     background-image: url(images/chas.jpg);
     background-size: cover;
     background-position: center;
 
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 2vw 2vw 2vw;
     align-items: flex-end;
     justify-content: flex-start;
 }
 
 .box > div > div:nth-child(4) {
     background-color: rgb(171, 94, 142);
-    border-radius: 20px 20px 0px 20px;
+    border-radius: 2vw 2vw 0px 2vw;
 }
 
 .box > div > div:nth-child(3) > p {
     color: white;
 }
 
+main > div:nth-of-type(1) > p:nth-of-type(2) {
+    padding-right: 6%;
+}
+
 /* Andra boxen börjar här */
 
-main > div:nth-of-type(1) > p {
-    padding-right: 2vw;
-}
-
-.box2 ul {
-    list-style: none;
-
-    margin-top: 0;
-    margin-bottom: 4vw;
-}
-
-.box2 h2 {
-    font-family: HeaderFont2;
-    color: lightgray;
-    margin: 0;
-    font-size: 2vw;
-}
-
-.box2 h3 {
-    margin: 0;
-    font-family: navfont3;
-    color: lightgray;
-    font-size: 1.7vw;
-}
-
-.box2 p, ul {
-    font-family: paragraphfont1;
-    color: lightgray;
-}
-
-.box2 ol {
+.box2 .list1 {
     background-color: rgb(34, 150, 174);
     width: 100%;
-    margin-top: 0.5vw;
-    padding: 1vw;
+    margin-top: 3%;
+    padding: 6%;
 }
 
 .box2 {
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid white;
-    border-radius: 20px;
-    margin: 2vw;
-    padding: 1.5vw;
+    border-radius: 2vw;
+    margin: 2%;
+    padding: 1.5%;
 }
 
 section {
@@ -329,7 +306,7 @@ section {
 
 section > div > div:nth-child(1) > img:nth-of-type(1) {
     width: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 2vw 2vw 0 0;
     position: relative;
     z-index: 1;
     transition: opacity 1s;
@@ -338,7 +315,7 @@ section > div > div:nth-child(1) > img:nth-of-type(1) {
 section > div > div:nth-child(1) > img:nth-of-type(2) {
     width: 100%;
     height: 100%;
-    border-radius: 20px 20px 0 0;
+    border-radius: 2vw 2vw 0 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -350,8 +327,19 @@ section > div > div:nth-child(1) >img:nth-of-type(1):hover {
 }
 
 section > div > p:nth-of-type(1) {
-    padding-top: 3vw;
+    padding-top: 9%;
     margin-bottom: 0;
+    font-size: 1.5vw;
+}
+
+section > div > p:nth-of-type(2) {
+    font-size: 1.2vw;
+    padding-right: 4%;
+}
+
+
+section > div > ul > li {
+    font-size: 1.2vw;
 }
 
 section > div:nth-child(1) {
@@ -365,7 +353,7 @@ section > div:nth-child(2) {
 
 section > div:nth-child(2) > div {
     display: flex;
-    gap: 0.5vw;
+    gap: 2%;
 }
 
 section > div:nth-child(2) > div > div {
@@ -374,38 +362,23 @@ section > div:nth-child(2) > div > div {
     flex-grow: 1;
 }
 
-section > div:nth-child(2) > div > div:nth-child(1) > ol {
-    border-radius: 0 0 0 20px;
+section > div:nth-child(2) > div > div:nth-child(1) {
+    border-radius: 0 0 0 2vw;
 }
 
-section > div:nth-child(2) > div > div:nth-child(2) > ol {
-    border-radius: 0 0 20px 0;
+section > div:nth-child(2) > div > div:nth-child(2) {
+    border-radius: 0 0 2vw 0;
 }
 
-section > div:nth-child(2) > div > div:nth-child(1) > ol > p {
+section > div:nth-child(2) > div > .list1 > p {
     padding: 0;
     margin: 0;
     font-size: 1vw;
 
-
     color: rgb(248, 217, 186);
 }
 
-section > div:nth-child(2) > div > div:nth-child(2) > ol > p {
-    padding: 0;
-    margin: 0;
-    font-size: 1vw;
-
-
-    color: rgb(248, 217, 186);
-}
-
-section > div:nth-child(2) > div > div:nth-child(1) > ol > p:nth-child(1){
-    font-family: navfont3;
-    font-size: 1.5vw;
-}
-
-section > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
+section > div:nth-child(2) > div > .list1 > p:nth-child(1){
     font-family: navfont3;
     font-size: 1.5vw;
 }
@@ -413,7 +386,7 @@ section > div:nth-child(2) > div > div:nth-child(2) > ol > p:nth-child(1) {
 .box2 > div {
     display: grid;
     grid-template-columns:2fr 1fr 2fr 1fr;
-    gap: 0.3vw;
+    gap: 0.5%;
 }
 
 section > div:nth-child(2) > div:nth-child(1) {
@@ -424,12 +397,12 @@ section > div:nth-child(2) > div:nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1vw;
+    padding: 5%;
 }
 
 .box2 > div > div:nth-child(1) {
     background-color: rgb(248, 217, 186);
-    border-radius: 20px 20px 20px 0;
+    border-radius: 2vw 2vw 2vw 0;
     grid-column: 1 / 2;
 }
 
@@ -441,17 +414,15 @@ section > div:nth-child(2) > div:nth-child(1) {
 .box2 > div > div:nth-child(2) {
     background-color: rgb(248, 217, 186);
     grid-column: 2 / 3;
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 2vw 2vw 2vw;
 }
 
 .box2 > div > div:nth-child(3) {
-    height: 10vw;
-    
     background-image: url(images/kramer.jpg);
     background-size: cover;
     background-position: center;
 
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 2vw 2vw 2vw;
     align-items: flex-end;
     justify-content: flex-start;
     grid-column: 3 / 4;
@@ -459,7 +430,7 @@ section > div:nth-child(2) > div:nth-child(1) {
 
 .box2 > div > div:nth-child(4) {
     background-color: rgb(248, 217, 186);
-    border-radius: 20px 20px 0px 20px;
+    border-radius: 2vw 2vw 0px 2vw;
 }
 
 .box2 > div > div:nth-child(3) > p {
@@ -467,18 +438,138 @@ section > div:nth-child(2) > div:nth-child(1) {
 }
 
 section > div:nth-of-type(1) > p {
-    padding-right: 2vw;
+    padding-right: 6%;
 }
 
 footer p {
-    padding-left: 1vw;
+    padding-left: 2%;
     margin-bottom: 0;
 }
 
-.box2 {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid white;
-    border-radius: 20px;
-    margin: 2vw;
-    padding: 1vw;
+@media (min-width: 1200px) {
+    #wrapper {
+        width: 1020px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    nav a {
+        font-size: 27px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    main > div > p:nth-of-type(1){
+        font-size: 20px;
+    }
+
+    main > div > p:nth-of-type(2) {
+        font-size: 17px;
+    }
+
+    main > div > ul > li {
+        font-size: 17px;
+    }
+
+    section > div > ul > li {
+        font-size: 17px;
+    }
+
+    .list p {
+        font-size: 14px;
+    }
+
+    .list p:first-child {
+        font-size: 20px;
+    }
+
+    section > div > p:nth-of-type(1) {
+        font-size: 20px;
+    }
+
+    section > div > p:nth-of-type(2) {
+        font-size: 17px;
+    }
+
+    .box > div > div > p {
+        font-size: 14px;
+    }
+
+    .box2 > div > div > p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    section > div > p:nth-of-type(2) {
+        font-size: 12px;
+    }
+
+    section > div > p:nth-of-type(1) {
+        font-size: 10px;
+    }
+
+    section > div > ul > li {
+        font-size: 12px;
+    }
+
+    .list p {
+        font-size: 10px;
+    }
+
+    .list p:first-child {
+        font-size: 15px;
+    }
+
+    main > div > ul > li {
+        font-size: 12px;
+    }
+
+    main > div > p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    main > div > p:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .box > div > div > p {
+        font-size: 10px;
+    }
+
+    .box2 h2 {
+        font-size: 20px;
+    }
+
+    .box2 h3 {
+        font-size: 17px;
+    }
+
+    .box2 > div > div > p {
+        font-size: 10px;
+    }
 }
